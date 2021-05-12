@@ -13,7 +13,7 @@ export function Summary() {
         </section>
         <strong>R$1000,00</strong>
       </div>
-      <div>
+      <div className="outcomes">
         <section>
           <p>Saídas</p>
           <img src={outcomeImg} alt="Saídas" />

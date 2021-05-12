@@ -17,8 +17,9 @@ export const Container = styled.div`
 
     tr {
       transition: opacity 200ms;
+      opacity: 0.5;
       &:hover {
-        opacity: 0.8;
+        opacity: 1;
       }
     }
 
