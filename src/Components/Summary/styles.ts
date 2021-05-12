@@ -30,7 +30,7 @@ export const Container = styled.div`
 
     &:hover {
       border-left: 17px solid var(--green);
-      border-radius: 1rem;
+      /* border-radius: 1rem; */
     }
 
     section {

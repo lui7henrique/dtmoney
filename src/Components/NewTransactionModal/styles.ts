@@ -35,6 +35,12 @@ export const Container = styled.form`
     }
   }
 
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
   button[type="submit"] {
     width: 100%;
     padding: 0 1.5rem;
@@ -80,6 +86,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
   opacity: ${(props) => (props.isActive ? 1 : 0.5)};
 
   transition: opacity 200ms;
+
   &:hover {
     opacity: 1;
   }
