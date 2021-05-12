@@ -11,25 +11,25 @@ export const Container = styled.div`
     padding: 1.5rem;
     border-radius: 0.25rem;
     color: var(--text-title);
-    transition: border-radius 300ms ease-out;
+    transition: border-radius, border-left 300ms ease-out;
 
     &.highlight-background {
       background: var(--green);
       color: var(--shape);
 
-      /* &:hover {
+      &:hover {
         border-left: 17px solid var(--shape);
-      } */
+      }
     }
 
-    /* &.outcomes {
+    &.outcomes {
       &:hover {
         border-left: 17px solid var(--red);
       }
-    } */
+    }
 
     &:hover {
-      /* border-left: 17px solid var(--green); */
+      border-left: 17px solid var(--green);
       border-radius: 1rem;
     }
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { darken } from "polished";
 
 export const Container = styled.div`
   margin-top: 4rem;
@@ -25,7 +26,6 @@ export const Container = styled.div`
 
     td {
       padding: 1rem 2rem;
-      border: 0;
       background-color: var(--shape);
 
       font-weight: 400;
@@ -33,7 +33,7 @@ export const Container = styled.div`
 
       transition: border-radius 500s;
       opacity: 0.7;
-      transition: opacity 200ms;
+      transition: opacity, border-left 200ms;
       transition: border-radius 300ms;
 
       &:hover {

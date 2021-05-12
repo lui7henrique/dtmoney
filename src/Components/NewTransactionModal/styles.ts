@@ -46,10 +46,58 @@ export const Container = styled.form`
     font-size: 1rem;
     margin-top: 1.5rem;
     transition: border-radius 500ms;
+    outline: none;
 
     &:hover {
       filter: brightness(0.8);
       border-radius: 1rem;
+    }
+  }
+`;
+
+export const TransactionTypeContainer = styled.div`
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  button {
+    height: 4rem;
+    border: 1px solid;
+    background: var(--shape);
+    border-radius: 0.25rem;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    opacity: 0.4;
+
+    transition: opacity 200ms;
+
+    &.incomeButton {
+      background: var(--green);
+    }
+
+    &.outcomeButton {
+      background: var(--red);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 0.5rem;
+      font-size: 1rem;
+      color: white;
     }
   }
 `;
