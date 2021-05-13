@@ -62,5 +62,14 @@ export const Container = styled.div`
         border-radius: 0 0.5rem 0.5rem 0;
       }
     }
+
+    button {
+      background: none;
+      border: 0;
+    }
+
+    .buttonRemoveIcon {
+      margin-top: 3px;
+    }
   }
 `;
