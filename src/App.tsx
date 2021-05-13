@@ -4,31 +4,30 @@ import { GlobalStyle } from "./styles/global";
 import Modal from "react-modal";
 import { useState } from "react";
 import { NewTransactionModal } from "./Components/NewTransactionModal";
+import { TransactionsProvider } from "./TransactionsContext";
 
 Modal.setAppElement("#root");
 
 export function App() {
-  const [isNewTransactionModalOpen, setisNewTransactionModalOpen] =
+  const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] =
     useState(false);
 
   function handleOpenNewTransactionModal() {
-    // setar a informação que o modal foi aberto
-    setisNewTransactionModalOpen(true);
+    setIsNewTransactionModalOpen(true);
   }
   function handleCloseNewTransactionModal() {
-    // setar a informação que o modal foi fechado
-    setisNewTransactionModalOpen(false);
+    setIsNewTransactionModalOpen(false);
   }
 
   return (
-    <>
-      <Header onOpenNewransactionModal={handleOpenNewTransactionModal} />
+    <TransactionsProvider>
+      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
       <NewTransactionModal
         isOpen={isNewTransactionModalOpen}
         onRequestClose={handleCloseNewTransactionModal}
       />
       <GlobalStyle />
-    </>
+    </TransactionsProvider>
   );
 }
