@@ -4,13 +4,10 @@ import { FiTrash } from "react-icons/fi";
 
 export function TransactionTable() {
   const { transactions } = useTransactions();
+  const { removeTransaction } = useTransactions();
 
   function handleRemoveTransaction(id: number) {
-    const filteredTransactions = transactions.filter(
-      (transaction) => transaction.id !== id
-    );
-
-    console.log(filteredTransactions);
+    removeTransaction(id);
   }
 
   return (
