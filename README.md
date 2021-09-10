@@ -26,7 +26,7 @@ Segundo projeto da trilha de ReactJS do Ignite da [Rocketseat](https://github.co
 <details close>
 <summary><strong>Consumindo API</strong></summary>
  <ol>
-   <li>Criando front-end sem back-end/li>
+   <li>Criando front-end sem back-end</li>
    <li>Configurando MirageJS</li>
    <li>Configurando cliente do Axios</li>
   </ol>
